@@ -9,11 +9,11 @@ namespace ReflectiveInjector.Extensions
     public static class ReflectiveInjectorMiddleware
     {
         /// <summary>
-        /// Registers the services using dependency injection
+        /// Registers the services using reflection
         /// </summary>
         /// <param name="services">Service collection used for the injection</param>
         /// <param name="libraryStartName">Start name of the libraries on which the injector will look for services to register</param>
-        public static void AddReflectorDependencies(this IServiceCollection services, string libraryStartName)
+        public static IServiceCollection AddReflectorDependencies(this IServiceCollection services, string libraryStartName)
         {
             var dependencyContextService = new DependencyContextService();
 
@@ -29,6 +29,8 @@ namespace ReflectiveInjector.Extensions
                         registry.RegisterServices(services);
                     });
             }
+
+            return services;
         }
     }
 }
