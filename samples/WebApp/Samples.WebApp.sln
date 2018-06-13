@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.WebApp", "Samples.WebApp\Samples.WebApp.csproj", "{D246E214-D27D-4882-ADA2-91F7B5353B7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.WebApp", "Samples.WebApp\Samples.WebApp.csproj", "{D246E214-D27D-4882-ADA2-91F7B5353B7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.WebApp.Business", "Samples.WebApp.Business\Samples.WebApp.Business.csproj", "{9B6B267A-AA8D-41E4-8381-A3C137DAABB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.WebApp.Business", "Samples.WebApp.Business\Samples.WebApp.Business.csproj", "{9B6B267A-AA8D-41E4-8381-A3C137DAABB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D246E214-D27D-4882-ADA2-91F7B5353B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +41,11 @@ Global
 		{9B6B267A-AA8D-41E4-8381-A3C137DAABB8}.Release|x64.Build.0 = Release|Any CPU
 		{9B6B267A-AA8D-41E4-8381-A3C137DAABB8}.Release|x86.ActiveCfg = Release|Any CPU
 		{9B6B267A-AA8D-41E4-8381-A3C137DAABB8}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5F97983-C359-4A07-8C26-D6346A5C1962}
 	EndGlobalSection
 EndGlobal
