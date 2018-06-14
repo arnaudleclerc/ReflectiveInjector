@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="ReflectiveInjector.Extensions" Version="1.0.0" />
+    <PackageReference Include="ReflectiveInjector.Extensions" Version="1.0.2" />
   </ItemGroup>
 
   <ItemGroup>
