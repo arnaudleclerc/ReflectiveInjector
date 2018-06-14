@@ -2,9 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.0.0</Version>
+    <Version>1.0.2</Version>
     <Authors>Arnaud Leclerc</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Interfaces to implement in order to register services for dependency injection in .NET Core using reflection.</Description>
+    <RepositoryUrl>https://github.com/arnaudleclerc/ReflectiveInjector</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
