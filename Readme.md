@@ -1,10 +1,11 @@
+[![NuGet](https://img.shields.io/nuget/v/ReflectiveInjector.Extensions.svg)](https://www.nuget.org/packages/ReflectiveInjector.Extensions/)
+[![NuGet](https://img.shields.io/nuget/v/ReflectiveInjector.Core.svg)](https://www.nuget.org/packages/ReflectiveInjector.Core/)
+
 # Dependency injection for .NET Core based on reflection
 
-## Why using reflection for dependency injection
+## Keep your classes internal
 
-By default, .NET Core has the transitive dependencies activated. It means that, when you have a multiple layer application, all the classes declared in those libraries will be available to all the libraries referencing it. It means that, on an ASP.NET Core application for example, the Controllers stack can know about the real instance of a data provider, not only its abstraction.
-
-Using reflection allows us to keep those classes internal to the library on which they are declared while still being able to register those classes into the dependency injection container of .NET Core.
+Using reflection to look for dependencies injection allows us to keep the real instances of injectable interfaces internal to our libraries and therefore not exposing them to other parts of our applications.
 
 ## How do I use this library
 
@@ -16,7 +17,7 @@ The ReflectiveInjector.Core library contains the IRegister interface to implemen
 
 The code of this library is available on src/ReflectiveInjector.Core.
 
-https://www.nuget.org/packages/ReflectiveInjector.Core/
+[![NuGet](https://img.shields.io/nuget/v/ReflectiveInjector.Core.svg)](https://www.nuget.org/packages/ReflectiveInjector.Core/)
 
 ### ReflectiveInjector.Extensions
 
@@ -24,7 +25,7 @@ The ReflectiveInjector.Extensions contains the AddReflectorDependencies middlewa
 
 The code of this library is available on src/ReflectiveInjector.Extensions.
 
-https://www.nuget.org/packages/ReflectiveInjector.Extensions/ 
+[![NuGet](https://img.shields.io/nuget/v/ReflectiveInjector.Extensions.svg)](https://www.nuget.org/packages/ReflectiveInjector.Extensions/)
 
 ## Samples
 
